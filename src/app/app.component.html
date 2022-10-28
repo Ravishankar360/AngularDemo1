@@ -1,0 +1,159 @@
+<h1>Welcome to angular</h1>
+<h1>Welcome to title :- {{title}}</h1>
+<h1>Welcome to name :- {{name}}</h1>
+<img [src] = "image" alt="" style="height:100px; width:250px" class="center">
+<br><button (click)="onClick()">Test Demo click event</button> 
+<input type="text" value="{{title}}"><br>
+<input type="text" [(ngModel)]="title">
+<h1> {{title}} </h1>
+ 
+  <ul>
+    <li *ngFor="let movie of movies">
+      {{ movie.title }} - {{movie.director}} - {{movie.cast}}
+    </li>
+  </ul>
+
+  <div [ngStyle]="{color:'green'}">Welcome</div>
+  <div [ngStyle]="{color:ngColor}">Welcome</div>
+  <div class="row">
+    Show checkbox <input type="checkbox" [(ngModel)]="showMe" />
+  </div>
+  <h1>ngIf </h1>
+ 
+<p *ngIf="showMe">
+  ShowMe is checked
+</p>
+<p *ngIf="!showMe">
+  ShowMe is unchecked
+</p>
+ 
+<h1>ngIf Else</h1>
+ 
+<p *ngIf="showMe; else elseBlock1">
+  ShowMe is checked
+</p>
+ 
+<ng-template #elseBlock1>
+  <p>ShowMe is unchecked Using elseBlock</p>
+</ng-template>
+ 
+<h1>ngIf then else</h1>
+ 
+<p *ngIf="showMe; then thenBlock2 else elseBlock2">
+  This is not rendered
+</p>
+ 
+<ng-template #thenBlock2>
+  <p>ShowMe is checked Using thenblock</p>
+</ng-template>
+ 
+<ng-template #elseBlock2>
+  <p>ShowMe is unchecked Using elseBlock</p>
+</ng-template>
+ 
+<h1>using hidden </h1>
+ 
+<p [hidden]="showMe">
+    content to render, when the condition is true  using hidden property binding
+</p>
+ 
+<p [hidden]="!showMe">
+    content to render, when the condition is false. using hidden property binding
+</p>
+<h1>ngIf </h1>
+ 
+<p *ngIf="showMe">
+  ShowMe is checked
+</p>
+<p *ngIf="!showMe">
+  ShowMe is unchecked
+</p>
+ 
+<h1>ngIf Else</h1>
+ 
+<p *ngIf="showMe; else elseBlock1">
+  ShowMe is checked
+</p>
+ 
+<ng-template #elseBlock1>
+  <p>ShowMe is unchecked Using elseBlock</p>
+</ng-template>
+ 
+<h1>ngIf then else</h1>
+ 
+<p *ngIf="showMe; then thenBlock2 else elseBlock2">
+  This is not rendered
+</p>
+ 
+<ng-template #thenBlock2>
+  <p>ShowMe is checked Using thenblock</p>
+</ng-template>
+ 
+<ng-template #elseBlock2>
+  <p>ShowMe is unchecked Using elseBlock</p>
+</ng-template>
+ 
+<h1>using hidden </h1>
+ 
+<p [hidden]="showMe">
+    content to render, when the condition is true  using hidden property binding
+</p>
+ 
+<p [hidden]="!showMe">
+    content to render, when the condition is false. using hidden property binding
+</p>
+
+
+<h1>Simple example of ngIf </h1>
+ 
+<h1>ngIf </h1>
+ 
+<p *ngIf="showMe">
+  ShowMe is checked
+</p>
+<p *ngIf="!showMe">
+  ShowMe is unchecked
+</p>
+ 
+<h1>ngIf Else</h1>
+ 
+<p *ngIf="showMe; else elseBlock1">
+  ShowMe is checked
+</p>
+ 
+<ng-template #elseBlock1>
+  <p>ShowMe is unchecked Using elseBlock</p>
+</ng-template>
+ 
+<h1>ngIf then else</h1>
+ 
+<p *ngIf="showMe; then thenBlock2 else elseBlock2">
+  This is not rendered
+</p>
+ 
+<ng-template #thenBlock2>
+  <p>ShowMe is checked Using thenblock</p>
+</ng-template>
+ 
+<ng-template #elseBlock2>
+  <p>ShowMe is unchecked Using elseBlock</p>
+</ng-template>
+ 
+<h1>using hidden </h1>
+ 
+<p [hidden]="showMe">
+    content to render, when the condition is true  using hidden property binding
+</p>
+ 
+<p [hidden]="!showMe">
+    content to render, when the condition is false. using hidden property binding
+</p>
+ 
+<p *ngIf="showMe; else elseBlock1">
+    ShowMe is checked
+  </p>
+   
+<app-date></app-date>
+<app-login></app-login>
+
+
